@@ -1,0 +1,2 @@
+total_rows,missing_user_id,missing_video_id,missing_timestamp,missing_play_time,missing_duration,negative_play_time,nonpositive_duration,invalid_click_flag,invalid_long_view_flag,invalid_like_flag,invalid_hate_flag
+11713045,0,0,0,0,0,0,937643,0,0,0,0

@@ -1,0 +1,7 @@
+policy,k,precision_at_k,eligible_user_days
+historical_popularity,1,0.11947368421052632,3800
+historical_popularity,3,0.11579994316567205,2346
+historical_popularity,5,0.10884786760025461,1571
+personalized_model,1,0.12657894736842104,3800
+personalized_model,3,0.1183574879227053,2346
+personalized_model,5,0.11279439847231063,1571

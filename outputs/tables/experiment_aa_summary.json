@@ -1,0 +1,12 @@
+{
+  "test_type": "A/A sanity check",
+  "users": 1000,
+  "control_users": 500,
+  "treatment_users": 500,
+  "srm_p_value": 1.0,
+  "primary_metric_p_value": 0.9109721009954818,
+  "srm_pass": true,
+  "primary_metric_pass": true,
+  "guardrail_pass": true,
+  "overall_aa_pass": true
+}

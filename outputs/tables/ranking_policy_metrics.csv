@@ -1,0 +1,3 @@
+policy,roc_auc,average_precision
+historical_popularity,0.5695508826388067,0.11497352044750538
+personalized_model,0.6811184021278905,0.17590702005167128

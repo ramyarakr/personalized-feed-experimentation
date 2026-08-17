@@ -1,0 +1,32 @@
+{
+  "randomization_unit": "user_id",
+  "allocation": {
+    "control": 0.5,
+    "treatment": 0.5
+  },
+  "control": "historical_popularity_ranking",
+  "treatment": "personalized_meaningful_engagement_ranking",
+  "primary_metric": "long_view_rate",
+  "secondary_metrics": [
+    "like_rate",
+    "follow_rate",
+    "comment_rate",
+    "future_7d_sessions"
+  ],
+  "guardrail_metrics": [
+    "hate_rate"
+  ],
+  "alpha": 0.05,
+  "power": 0.8,
+  "target_relative_mde": 0.05,
+  "baseline_long_view_rate": 0.0841545040438784,
+  "treatment_long_view_rate_target": 0.08836222924607233,
+  "absolute_mde_percentage_points": 0.4207725202193924,
+  "average_interactions_per_user": 43.028,
+  "estimated_long_view_icc": 0.08613077962145767,
+  "design_effect": 4.6199044059306225,
+  "independent_observations_per_group": 69873,
+  "cluster_adjusted_observations_per_group": 322804,
+  "estimated_users_per_group": 7503,
+  "estimated_total_users": 15005
+}

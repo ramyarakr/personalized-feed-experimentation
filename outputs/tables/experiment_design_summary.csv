@@ -1,0 +1,2 @@
+baseline_long_view_rate,relative_mde,treatment_target_rate,absolute_mde_pp,avg_interactions_per_user,estimated_icc,design_effect,independent_obs_per_group,cluster_adjusted_obs_per_group,estimated_users_per_group,estimated_total_users
+0.0841545040438784,0.05,0.08836222924607233,0.4207725202193924,43.028,0.08613077962145767,4.6199044059306225,69873,322804,7503,15005
