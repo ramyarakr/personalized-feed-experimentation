@@ -1,38 +1,1859 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Personalized Feed Experimentation | Product Data Science</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Personalized Feed Experimentation. Product analytics, experimentation, recommendation ranking, and monitoring."
+    >
+
+    <title>
+        Personalized Feed Experimentation
+    </title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <main>
-    <nav><strong>Personalized Feed Experimentation</strong><span>Product Data Science Case Study</span></nav>
 
-    <section class="hero">
-      <p class="eyebrow">PERSONALIZATION · EXPERIMENTATION · CAUSAL INFERENCE</p>
-      <h1>Should a recommendation feed optimize clicks or meaningful engagement?</h1>
-      <p class="lede">A product data science case study using real recommendation logs to connect user behavior, experimentation, causal measurement, and personalization to a launch decision.</p>
-    </section>
+<div id="spotlight"></div>
 
-    <section class="grid">
-      <article><h2>Product question</h2><p>Determine whether a meaningful-engagement ranking objective should replace a click-oriented objective and identify the right rollout population.</p></article>
-      <article><h2>Dataset</h2><p>KuaiRand recommendation logs with sequential behavior, rich feedback signals, and randomized exposure data.</p></article>
-      <article><h2>Methods</h2><p>SQL analytics, cohorts, experimentation, causal inference, statistical modeling, recommendation evaluation, and heterogeneous effects.</p></article>
-      <article><h2>Decision</h2><p class="muted">Analysis in progress. Final ship / iterate / reject recommendation will be published here.</p></article>
-    </section>
+<div class="theme-banner">
 
-    <section>
-      <h2>Case study</h2>
-      <ol class="steps">
-        <li><strong>Define success.</strong> Build the metric tree and guardrails.</li>
-        <li><strong>Diagnose behavior.</strong> Find where engagement and repeat usage differ across users.</li>
-        <li><strong>Measure causally.</strong> Contrast biased observational behavior with randomized exposure evidence.</li>
-        <li><strong>Evaluate personalization.</strong> Test whether a meaningful-engagement objective improves product outcomes.</li>
-        <li><strong>Make the call.</strong> Recommend a launch strategy with uncertainty and tradeoffs.</li>
-      </ol>
-    </section>
-  </main>
+    <span class="theme-label">
+        Website Design Theme
+    </span>
+
+    <span class="theme-name">
+        Mysteries
+    </span>
+
+    <span class="theme-interest">
+        inspired by my interest in mysteries and detective stories
+    </span>
+
+</div>
+
+
+<nav class="navbar">
+
+    <div class="nav-inner">
+
+        <a class="brand" href="#top">
+            CASE 01
+        </a>
+
+        <div class="nav-links">
+          <a href="#skills">Skills</a>
+          <a href="#question">Question</a>
+          <a href="#process">Process</a>
+          <a href="#evidence">Findings</a>
+          <a href="#ranking">Ranking</a>
+          <a href="#experiment">Experiment</a>
+          <a href="#ranking-demo">Demo</a>
+          <a href="#system">System</a>
+      </div>
+
+        <a
+            class="github-link"
+            href="https://github.com/ramyarakr/personalized-feed-experimentation"
+            target="_blank"
+            rel="noopener"
+        >
+            GitHub ↗
+        </a>
+
+    </div>
+
+</nav>
+
+
+<header id="top" class="hero">
+
+    <div class="case-grid"></div>
+
+    <div class="container hero-layout">
+
+        <div class="hero-copy">
+
+            <div class="case-tag">
+                CASE FILE 001
+            </div>
+
+            <div class="investigator-line">
+
+              <span>
+                  LEAD INVESTIGATOR
+              </span>
+
+              <strong>
+                  Ramya
+              </strong>
+
+          </div>
+
+            <h1>
+                Personalized Feed
+                <span>Experimentation</span>
+            </h1>
+
+            <p class="hero-summary">
+                A product data science project studying how
+                meaningful engagement and personalization can
+                improve recommendation ranking.
+            </p>
+
+            <div class="hero-tools">
+                <span>Python</span>
+                <span>SQL</span>
+                <span>DuckDB</span>
+                <span>scikit-learn</span>
+                <span>statsmodels</span>
+                <span>pytest</span>
+                <span>GitHub Actions</span>
+            </div>
+
+            <div class="hero-actions">
+
+                <a
+                    class="button primary"
+                    href="#process"
+                >
+                    Open Case File
+                </a>
+
+                <a
+                    class="button secondary"
+                    href="#conclusion"
+                >
+                    View Conclusion
+                </a>
+
+                <a
+                    class="button secondary"
+                    href="https://github.com/ramyarakr/personalized-feed-experimentation"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    View Code Repository ↗
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <aside class="case-summary">
+
+            <div class="folder-tab">
+                CASE SUMMARY
+            </div>
+
+            <div class="summary-row">
+                <strong>11.7M+</strong>
+                <span>behavioral events</span>
+            </div>
+
+            <div class="summary-row">
+                <strong>147K+</strong>
+                <span>sessions analyzed</span>
+            </div>
+
+            <div class="summary-row">
+                <strong class="accent">+5.9%</strong>
+                <span>Precision@1 lift</span>
+            </div>
+
+            <div class="summary-row">
+                <strong>1M</strong>
+                <span>candidates benchmarked</span>
+            </div>
+
+            <div class="summary-row">
+                <strong>8 / 8</strong>
+                <span>automated tests passing</span>
+            </div>
+
+        </aside>
+
+    </div>
+
+</header>
+
+
+<main>
+
+<!-- SKILLS -->
+
+<section
+    id="skills"
+    class="section skills-top"
+>
+
+    <div class="container">
+
+        <div class="section-number">
+            TOOLKIT
+        </div>
+
+        <div class="section-heading compact-heading">
+
+            <h2>
+                Skills Used
+            </h2>
+
+            <p>
+                Product analytics, experimentation,
+                machine learning, and engineering.
+            </p>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+            <div class="skill-file">
+
+                <span>
+                    PRODUCT ANALYTICS
+                </span>
+
+                <ul>
+                    <li>Metric design</li>
+                    <li>Sessionization</li>
+                    <li>Retention analysis</li>
+                    <li>User behavior analysis</li>
+                </ul>
+
+            </div>
+
+
+            <div class="skill-file">
+
+                <span>
+                    EXPERIMENTATION
+                </span>
+
+                <ul>
+                    <li>A/B testing</li>
+                    <li>Power analysis</li>
+                    <li>User-level randomization</li>
+                    <li>A/A validation</li>
+                </ul>
+
+            </div>
+
+
+            <div class="skill-file">
+
+                <span>
+                    DATA & ML
+                </span>
+
+                <ul>
+                    <li>Python</li>
+                    <li>SQL · DuckDB</li>
+                    <li>Statistical modeling</li>
+                    <li>Recommendation ranking</li>
+                </ul>
+
+            </div>
+
+
+            <div class="skill-file">
+
+                <span>
+                    ENGINEERING
+                </span>
+
+                <ul>
+                    <li>Reusable Python modules</li>
+                    <li>pytest</li>
+                    <li>GitHub Actions</li>
+                    <li>Monitoring & drift detection</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- QUESTION -->
+
+<section id="question" class="section">
+
+    <div class="container">
+
+        <div class="section-number">
+            FILE 01
+        </div>
+
+        <div class="section-heading">
+
+            <h2>
+                The Question
+            </h2>
+
+            <p>
+                Should a recommendation system optimize for
+                simple interaction volume or for behavior that
+                better represents meaningful engagement?
+            </p>
+
+        </div>
+
+
+        <div class="case-question">
+
+            <div class="question-pin"></div>
+
+            <p>
+                Can personalization improve the chance that the
+                first recommendation shown to a user leads to
+                meaningful engagement?
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- PROCESS -->
+
+<section id="process" class="section dark-section">
+
+    <div class="container">
+
+        <div class="section-number">
+            FILE 02
+        </div>
+
+        <div class="section-heading">
+
+            <h2>
+                Investigation Process
+            </h2>
+
+            <p>
+                The project moved from raw behavioral logs to a
+                tested ranking pipeline in six stages.
+            </p>
+
+        </div>
+
+
+        <div class="process-line">
+
+            <div class="process-step">
+
+                <span class="step-id">
+                    01
+                </span>
+
+                <h3>
+                    Audit
+                </h3>
+
+                <p>
+                    Checked schema, coverage, missing values,
+                    and metric definitions.
+                </p>
+
+                <div class="skill-tag">
+                    SQL · DuckDB
+                </div>
+
+            </div>
+
+
+            <div class="process-connector"></div>
+
+
+            <div class="process-step">
+
+                <span class="step-id">
+                    02
+                </span>
+
+                <h3>
+                    Define Metrics
+                </h3>
+
+                <p>
+                    Tested whether long-view behavior was a
+                    useful measure of engagement quality.
+                </p>
+
+                <div class="skill-tag">
+                    Product Analytics
+                </div>
+
+            </div>
+
+
+            <div class="process-connector"></div>
+
+
+            <div class="process-step">
+
+                <span class="step-id">
+                    03
+                </span>
+
+                <h3>
+                    Study Behavior
+                </h3>
+
+                <p>
+                    Built sessions and modeled retention and
+                    future activity.
+                </p>
+
+                <div class="skill-tag">
+                    Statistics · SQL
+                </div>
+
+            </div>
+
+
+            <div class="process-connector"></div>
+
+
+            <div class="process-step">
+
+                <span class="step-id">
+                    04
+                </span>
+
+                <h3>
+                    Rank
+                </h3>
+
+                <p>
+                    Compared a historical baseline with a
+                    personalized recommendation model.
+                </p>
+
+                <div class="skill-tag">
+                    ML · Ranking
+                </div>
+
+            </div>
+
+
+            <div class="process-connector"></div>
+
+
+            <div class="process-step">
+
+                <span class="step-id">
+                    05
+                </span>
+
+                <h3>
+                    Experiment
+                </h3>
+
+                <p>
+                    Designed user-level A/B testing and
+                    validated the analysis framework.
+                </p>
+
+                <div class="skill-tag">
+                    Experimentation · A/B Test
+                </div>
+
+            </div>
+
+
+            <div class="process-connector"></div>
+
+
+            <div class="process-step">
+
+                <span class="step-id">
+                    06
+                </span>
+
+                <h3>
+                    Productionize
+                </h3>
+
+                <p>
+                    Added testing, monitoring, drift checks,
+                    and pipeline safeguards.
+                </p>
+
+                <div class="skill-tag">
+                    CI · Monitoring
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- DATA -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-number">
+            FILE 03
+        </div>
+
+        <div class="section-heading">
+
+            <h2>
+                Evidence Base
+            </h2>
+
+            <p>
+                The main analysis uses KuaiRand-1K behavioral
+                recommendation data.
+            </p>
+
+        </div>
+
+
+        <div class="evidence-grid four">
+
+            <div class="evidence-card">
+                <span class="evidence-label">
+                    RECORDS
+                </span>
+                <strong>
+                    11.71M
+                </strong>
+                <p>
+                    interactions
+                </p>
+            </div>
+
+            <div class="evidence-card">
+                <span class="evidence-label">
+                    USERS
+                </span>
+                <strong>
+                    1,000
+                </strong>
+                <p>
+                    unique users
+                </p>
+            </div>
+
+            <div class="evidence-card">
+                <span class="evidence-label">
+                    RANDOM SAMPLE
+                </span>
+                <strong>
+                    43,028
+                </strong>
+                <p>
+                    randomized exposures
+                </p>
+            </div>
+
+            <div class="evidence-card">
+                <span class="evidence-label">
+                    CORE IDS
+                </span>
+                <strong>
+                    0
+                </strong>
+                <p>
+                    missing values
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="note-card">
+
+            <div class="note-marker">
+                NOTE
+            </div>
+
+            <p>
+                The click field has different meanings across
+                product surfaces, so pooled click-through rate
+                was not used as a universal product metric.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FINDINGS -->
+
+<section id="evidence" class="section dark-section">
+
+    <div class="container">
+
+        <div class="section-number">
+            FILE 04
+        </div>
+
+        <div class="section-heading">
+
+            <h2>
+                What the Data Showed
+            </h2>
+
+            <p>
+                Long-view interactions were consistently linked
+                with stronger engagement behavior.
+            </p>
+
+        </div>
+
+
+        <div class="finding-grid">
+
+            <div class="finding-card">
+                <span>
+                    LIKE RATE
+                </span>
+                <strong>
+                    2.4×
+                </strong>
+                <p>
+                    higher
+                </p>
+            </div>
+
+            <div class="finding-card">
+                <span>
+                    FOLLOW RATE
+                </span>
+                <strong>
+                    5.0×
+                </strong>
+                <p>
+                    higher
+                </p>
+            </div>
+
+            <div class="finding-card">
+                <span>
+                    COMMENT RATE
+                </span>
+                <strong>
+                    13.4×
+                </strong>
+                <p>
+                    higher
+                </p>
+            </div>
+
+            <div class="finding-card">
+                <span>
+                    FORWARD RATE
+                </span>
+                <strong>
+                    6.7×
+                </strong>
+                <p>
+                    higher
+                </p>
+            </div>
+
+            <div class="finding-card">
+                <span>
+                    PROFILE RATE
+                </span>
+                <strong>
+                    5.1×
+                </strong>
+                <p>
+                    higher
+                </p>
+            </div>
+
+            <div class="finding-card">
+                <span>
+                    HATE RATE
+                </span>
+                <strong class="good">
+                    75%
+                </strong>
+                <p>
+                    lower
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="finding-summary">
+
+            <span class="stamp">
+                FINDING
+            </span>
+
+            <p>
+                <strong>
+                    Long-view rate works well as a measure of
+                    same-session engagement quality.
+                </strong>
+
+                It was not a strong standalone predictor of
+                future usage after controlling for user activity.
+            </p>
+
+        </div>
+
+
+        <div class="mini-stats">
+
+            <div>
+                <strong>147,752</strong>
+                <span>sessions</span>
+            </div>
+
+            <div>
+                <strong>30 min</strong>
+                <span>session threshold</span>
+            </div>
+
+            <div>
+                <strong>86.1%</strong>
+                <span>sessions with a long view</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- RANKING -->
+
+<section id="ranking" class="section">
+
+    <div class="container">
+
+        <div class="section-number">
+            FILE 05
+        </div>
+
+        <div class="section-heading">
+
+            <h2>
+                Ranking Test
+            </h2>
+
+            <p>
+                I compared two ways to order candidate content
+                for each user.
+            </p>
+
+        </div>
+
+
+        <div class="suspect-grid">
+
+            <div class="suspect-card">
+
+                <span class="suspect-tag">
+                    BASELINE
+                </span>
+
+                <h3>
+                    Historical Ranking
+                </h3>
+
+                <p>
+                    Scores content using its previous long-view
+                    performance.
+                </p>
+
+                <div class="large-score">
+                    11.95%
+                </div>
+
+                <small>
+                    Precision@1
+                </small>
+
+            </div>
+
+
+            <div class="comparison-symbol">
+                VS
+            </div>
+
+
+            <div class="suspect-card winner">
+
+                <span class="suspect-tag">
+                    PERSONALIZED
+                </span>
+
+                <h3>
+                    Personalized Ranking
+                </h3>
+
+                <p>
+                    Uses user history, content history, context,
+                    and metadata.
+                </p>
+
+                <div class="large-score">
+                    12.66%
+                </div>
+
+                <small>
+                    Precision@1
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <div class="ranking-results">
+
+            <div class="ranking-result-row">
+
+                <span class="metric-title">
+                    ROC-AUC
+                </span>
+
+                <div class="result-track">
+                    <div
+                        class="result-fill baseline"
+                        data-width="57"
+                    ></div>
+                </div>
+
+                <strong>
+                    0.570
+                </strong>
+
+                <div class="result-track">
+                    <div
+                        class="result-fill personalized"
+                        data-width="68"
+                    ></div>
+                </div>
+
+                <strong class="highlight">
+                    0.681
+                </strong>
+
+            </div>
+
+
+            <div class="ranking-result-row">
+
+                <span class="metric-title">
+                    Average Precision
+                </span>
+
+                <div class="result-track">
+                    <div
+                        class="result-fill baseline"
+                        data-width="45"
+                    ></div>
+                </div>
+
+                <strong>
+                    0.115
+                </strong>
+
+                <div class="result-track">
+                    <div
+                        class="result-fill personalized"
+                        data-width="70"
+                    ></div>
+                </div>
+
+                <strong class="highlight">
+                    0.176
+                </strong>
+
+            </div>
+
+
+            <div class="ranking-result-row">
+
+                <span class="metric-title">
+                    Precision@1
+                </span>
+
+                <div class="result-track">
+                    <div
+                        class="result-fill baseline"
+                        data-width="72"
+                    ></div>
+                </div>
+
+                <strong>
+                    11.95%
+                </strong>
+
+                <div class="result-track">
+                    <div
+                        class="result-fill personalized"
+                        data-width="76"
+                    ></div>
+                </div>
+
+                <strong class="highlight">
+                    12.66%
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <div class="finding-summary">
+
+            <span class="stamp solved">
+                RESULT
+            </span>
+
+            <p>
+                The personalized policy improved
+                <strong>Precision@1 by 5.9% relative</strong>
+                on held-out randomized exposure data.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- EXPERIMENT -->
+
+<section id="experiment" class="section dark-section">
+
+    <div class="container">
+
+        <div class="section-number">
+            FILE 06
+        </div>
+
+        <div class="section-heading">
+
+            <h2>
+                Experiment Plan
+            </h2>
+
+            <p>
+                Offline ranking improvement is useful evidence,
+                but it is not enough to launch a new policy. 
+                A/B testing is required because policies that seem 
+                effective often cause hidden harm or fail in 
+                real-world use.
+            </p>
+
+        </div>
+
+
+        <div class="experiment-board">
+
+            <div class="experiment-arm">
+
+                <span class="arm-percent">
+                    50%
+                </span>
+
+                <h3>
+                    Control
+                </h3>
+
+                <p>
+                    Historical ranking
+                </p>
+
+            </div>
+
+
+            <div class="experiment-middle">
+
+                <div class="thread-line left"></div>
+                <div class="thread-line right"></div>
+
+                <strong>
+                    ≈15K
+                </strong>
+
+                <span>
+                    users
+                </span>
+
+                <small>
+                    user-level randomization
+                </small>
+
+            </div>
+
+
+            <div class="experiment-arm treatment">
+
+                <span class="arm-percent">
+                    50%
+                </span>
+
+                <h3>
+                    Treatment
+                </h3>
+
+                <p>
+                    Personalized ranking
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="evidence-grid four">
+
+            <div class="evidence-card">
+              <span class="evidence-label">
+                  BASELINE RATE
+              </span>
+              <strong>8.42%</strong>
+              <p>
+                  Current long-view rate used as the experiment starting point.
+              </p>
+          </div>
+
+          <div class="evidence-card">
+              <span class="evidence-label">
+                  MINIMUM DETECTABLE EFFECT
+              </span>
+              <strong>+5%</strong>
+              <p>
+                  Smallest relative improvement the experiment is designed to detect.
+              </p>
+          </div>
+
+          <div class="evidence-card">
+              <span class="evidence-label">
+                  STATISTICAL POWER
+              </span>
+              <strong>80%</strong>
+              <p>
+                  Probability of detecting the target lift if it is truly present.
+              </p>
+          </div>
+
+          <div class="evidence-card">
+              <span class="evidence-label">
+                  DESIGN EFFECT
+              </span>
+              <strong>4.62×</strong>
+              <p>
+                  Sample-size adjustment to increase the number of users required because multiple interactions 
+                  from the same user do not count as fully independent observations.
+              </p>
+          </div>
+
+        </div>
+
+
+        <div class="aa-validation">
+
+            <div class="status-light"></div>
+
+            <div>
+
+                <span>
+                    A/A VALIDATION PASSED
+                </span>
+
+                <p>
+                    500 control users, 500 treatment users,
+                    SRM p = 1.00, primary metric p = 0.911.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- REUSABLE RANKING DEMO -->
+
+<section
+    id="ranking-demo"
+    class="section"
+>
+
+    <div class="container">
+
+        <div class="section-number">
+            FILE 07
+        </div>
+
+
+        <div class="section-heading">
+
+          <h2>
+              Try the Ranking System
+          </h2>
+
+          <p>
+              See how the same candidate experiences are ranked
+              differently for different users.
+          </p>
+
+      </div>
+
+
+      <div class="synthetic-warning">
+          SYNTHETIC DEMONSTRATION
+          <span>
+              Uses the trained demo ranking model.
+          </span>
+      </div>
+
+
+      <div class="demo-instructions">
+
+          <strong>How to use it</strong>
+
+          <div>
+              <span>1</span>
+              Choose a user
+          </div>
+
+          <div>
+              <span>2</span>
+              Switch ranking policy
+          </div>
+
+          <div>
+              <span>3</span>
+              Click a candidate to inspect its score
+          </div>
+
+      </div>
+
+      <div class="ranking-flow-mini">
+
+          <span>User</span>
+          <b>→</b>
+          <span>Candidate Features</span>
+          <b>→</b>
+          <span>Model Score</span>
+          <b>→</b>
+          <span>Top 5</span>
+
+      </div>
+
+
+        <!-- INTERACTIVE CONTROL -->
+
+        <div class="ranking-demo-controls">
+
+            <div class="demo-control">
+
+                <label for="demo-user">
+                    USER
+                </label>
+
+                <select id="demo-user"></select>
+
+            </div>
+
+
+            <div class="demo-control">
+
+                <label>
+                    RANKING METHOD
+                </label>
+
+                <div class="policy-toggle">
+
+                    <button
+                        class="policy-button"
+                        data-policy="baseline"
+                    >
+                        Historical
+                    </button>
+
+                    <button
+                        class="policy-button active"
+                        data-policy="personalized"
+                    >
+                        Personalized
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- USER PROFILE -->
+
+        <div class="interactive-profile">
+
+            <div class="profile-file-label">
+                USER PROFILE
+            </div>
+
+            <div class="interactive-profile-grid">
+
+                <div>
+
+                    <span>
+                        Primary preference
+                    </span>
+
+                    <strong
+                        id="demo-primary"
+                    >
+                        Loading...
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Secondary preference
+                    </span>
+
+                    <strong
+                        id="demo-secondary"
+                    >
+                        Loading...
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Preferred session
+                    </span>
+
+                    <strong
+                        id="demo-session"
+                    >
+                        Loading...
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <span>
+                        Novelty preference
+                    </span>
+
+                    <strong
+                        id="demo-novelty"
+                    >
+                        Loading...
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- EXPLANATION -->
+
+        <div class="ranking-explanation">
+
+            <div class="ranking-explanation-number">
+                1
+            </div>
+
+            <div>
+
+                <strong>
+                    Start with a candidate pool
+                </strong>
+
+                <p>
+                    Each user has several available experiences.
+                    The system must decide which ones should
+                    appear first.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- CANDIDATES -->
+
+        <div class="interactive-ranking-layout">
+
+            <div class="candidate-panel">
+
+                <div class="panel-heading">
+
+                    <div>
+
+                        <span>
+                            CANDIDATE POOL
+                        </span>
+
+                        <strong>
+                            Ranked by score
+                        </strong>
+
+                    </div>
+
+                    <small id="candidate-count">
+                    </small>
+
+                </div>
+
+
+                <div
+                    id="candidate-list"
+                    class="candidate-list"
+                >
+                </div>
+
+            </div>
+
+
+            <!-- INSPECTOR -->
+
+            <div class="score-inspector">
+
+                <div class="profile-file-label">
+                    SCORE INSPECTOR
+                </div>
+
+
+                <h3 id="inspector-name">
+                    Select a candidate
+                </h3>
+
+
+                <div
+                    id="inspector-category"
+                    class="inspector-category"
+                >
+                </div>
+
+
+                <div class="score-display">
+
+                    <span>
+                        Ranking Score
+                    </span>
+
+                    <strong
+                        id="inspector-score"
+                    >
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="feature-divider">
+
+                    FEATURES USED
+
+                </div>
+
+
+                <div class="feature-inspector">
+
+                    <div>
+
+                        <span>
+                            Primary category match
+                        </span>
+
+                        <strong
+                            id="feature-primary"
+                        >
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Secondary category match
+                        </span>
+
+                        <strong
+                            id="feature-secondary"
+                        >
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Content quality
+                        </span>
+
+                        <strong
+                            id="feature-quality"
+                        >
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Historical popularity
+                        </span>
+
+                        <strong
+                            id="feature-popularity"
+                        >
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Novelty alignment
+                        </span>
+
+                        <strong
+                            id="feature-novelty"
+                        >
+                            -
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            Session length
+                        </span>
+
+                        <strong
+                            id="feature-session"
+                        >
+                            -
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- BOTTOM EXPLANATION -->
+
+        <div class="ranking-demo-conclusion">
+
+            <div class="ranking-explanation-number">
+                2
+            </div>
+
+            <div>
+
+                <strong id="ranking-policy-title">
+                    Personalized ranking
+                </strong>
+
+                <p id="ranking-policy-description">
+                    The model combines user preferences,
+                    experience characteristics, and contextual
+                    match features to estimate meaningful
+                    engagement. Candidates are sorted from
+                    highest predicted probability to lowest.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="ranking-demo-conclusion">
+
+            <div class="ranking-explanation-number">
+                3
+            </div>
+
+            <div>
+
+                <strong>
+                    The first five become the recommendations
+                </strong>
+
+                <p>
+                    Change the user or ranking policy above to
+                    see how the same candidate-ranking process
+                    produces a different ordering.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SYSTEM -->
+
+<section id="system" class="section dark-section">
+
+    <div class="container">
+
+        <div class="section-number">
+            FILE 08
+        </div>
+
+        <div class="section-heading">
+
+            <h2>
+                Engineering the System
+            </h2>
+
+            <p>
+                The final project includes reusable ranking code,
+                testing, monitoring, and an end-to-end pipeline.
+            </p>
+
+        </div>
+
+
+        <div class="system-pipeline">
+
+            <div class="pipeline-box">
+                <span>01</span>
+                <strong>Candidate Data</strong>
+            </div>
+
+            <div class="pipeline-wire"></div>
+
+            <div class="pipeline-box">
+                <span>02</span>
+                <strong>Quality Checks</strong>
+            </div>
+
+            <div class="pipeline-wire"></div>
+
+            <div class="pipeline-box">
+                <span>03</span>
+                <strong>Drift Checks</strong>
+            </div>
+
+            <div class="pipeline-wire"></div>
+
+            <div class="pipeline-box">
+                <span>04</span>
+                <strong>Model Scoring</strong>
+            </div>
+
+            <div class="pipeline-wire"></div>
+
+            <div class="pipeline-box">
+                <span>05</span>
+                <strong>Top-K Ranking</strong>
+            </div>
+
+        </div>
+
+
+        <div class="system-grid">
+
+            <div class="system-card">
+                <div class="system-symbol">✓</div>
+                <strong>8 / 8</strong>
+                <span>automated tests</span>
+            </div>
+
+            <div class="system-card">
+                <div class="system-symbol">↻</div>
+                <strong>CI</strong>
+                <span>GitHub Actions</span>
+            </div>
+
+            <div class="system-card">
+                <div class="system-symbol">⚡</div>
+                <strong>1M</strong>
+                <span>candidates in 3.03 sec</span>
+            </div>
+
+            <div class="system-card">
+                <div class="system-symbol">◉</div>
+                <strong>4</strong>
+                <span>monitoring layers</span>
+            </div>
+
+        </div>
+
+
+        <div class="monitoring-chain">
+
+            <span>
+                Data Quality
+            </span>
+
+            <b>→</b>
+
+            <span>
+                Input Drift
+            </span>
+
+            <b>→</b>
+
+            <span>
+                Prediction Drift
+            </span>
+
+            <b>→</b>
+
+            <span>
+                Model Performance
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FAILURE TESTS -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-number">
+            FILE 09
+        </div>
+
+        <div class="section-heading">
+
+            <h2>
+                Failure Tests
+            </h2>
+
+            <p>
+                I tested whether the pipeline detects bad inputs
+                and model degradation before producing rankings.
+            </p>
+
+        </div>
+
+
+        <div class="failure-grid">
+
+            <article class="failure-file">
+
+                <div class="red-string"></div>
+
+                <span class="failure-label">
+                    INPUT DRIFT
+                </span>
+
+                <h3>
+                    Distribution Shift
+                </h3>
+
+                <div class="failure-row">
+                    <span>Quality score</span>
+                    <strong>−25%</strong>
+                    <em>ALERT</em>
+                </div>
+
+                <div class="failure-row">
+                    <span>Popularity score</span>
+                    <strong>+20%</strong>
+                    <em>ALERT</em>
+                </div>
+
+                <p>
+                    The ranking pipeline stopped before model
+                    scoring because the input drift exceeded
+                    the configured limits.
+                </p>
+
+            </article>
+
+
+            <article class="failure-file">
+
+                <div class="red-string"></div>
+
+                <span class="failure-label">
+                    CONCEPT DRIFT
+                </span>
+
+                <h3>
+                    Performance Degradation
+                </h3>
+
+                <div class="failure-row">
+                    <span>ROC-AUC</span>
+                    <strong>−8.5%</strong>
+                    <small>PASS</small>
+                </div>
+
+                <div class="failure-row">
+                    <span>Average Precision</span>
+                    <strong>−15.6%</strong>
+                    <em>ALERT</em>
+                </div>
+
+                <p>
+                    The performance monitor detected a change
+                    in the relationship between features and
+                    outcomes.
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONCLUSION -->
+
+<section
+    id="conclusion"
+    class="section conclusion"
+>
+
+    <div class="container">
+
+        <div class="final-file">
+
+            <div class="case-closed">
+                CASE CONCLUSION
+            </div>
+
+            <h2>
+                Use meaningful engagement as a ranking signal.
+                Test personalization before launch.
+            </h2>
+
+            <p>
+                Long-view behavior was a strong measure of
+                engagement quality. The personalized ranking
+                model improved offline recommendation quality,
+                especially at the first ranked position.
+            </p>
+
+            <p>
+                The next product step would be a user-level
+                online experiment with defined guardrails and
+                monitoring.
+            </p>
+
+            <div class="final-actions">
+
+                <a
+                    class="button primary"
+                    href="https://github.com/ramyarakr/personalized-feed-experimentation"
+                    target="_blank"
+                    rel="noopener"
+                >
+                    View Repository ↗
+                </a>
+
+                <a
+                    class="button secondary"
+                    href="#top"
+                >
+                    Return to Case File
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+    <div class="container footer-inner">
+
+        <div>
+            <strong>
+                Personalized Feed Experimentation
+            </strong>
+
+            <span>
+                Website Design Theme: Mysteries
+            </span>
+        </div>
+
+        <p>
+            Python · SQL · Statistics · ML · Experimentation · Engineering
+        </p>
+
+    </div>
+
+</footer>
+
+
+<script src="app.js"></script>
+
 </body>
 </html>

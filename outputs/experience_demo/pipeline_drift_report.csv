@@ -1,0 +1,5 @@
+metric,reference_value,current_value,relative_change,threshold,passed
+meaningful_engagement_rate,0.23915,0.23915,0.0,0.1,True
+quality_score,0.7098743027352763,0.5324057270514572,-0.25000000000000006,0.1,False
+popularity_score,0.4687528714475372,0.5625034457370446,0.1999999999999999,0.1,False
+novelty_score,0.507139434249847,0.507139434249847,0.0,0.1,True
