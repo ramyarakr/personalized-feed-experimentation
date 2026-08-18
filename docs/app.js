@@ -1,3 +1,25 @@
+
+// CASE FILE 001 typing animation
+const caseTag = document.getElementById("caseTag");
+
+if (caseTag) {
+  const fullText = caseTag.dataset.text || "CASE FILE 001";
+  caseTag.textContent = "";
+
+  let caseIndex = 0;
+
+  function typeCaseFile() {
+    if (caseIndex >= fullText.length) return;
+
+    caseTag.textContent += fullText[caseIndex];
+    caseIndex += 1;
+
+    setTimeout(typeCaseFile, 72);
+  }
+
+  setTimeout(typeCaseFile, 280);
+}
+
 // Spotlight
 document.addEventListener("mousemove", (event) => {
   document.documentElement.style.setProperty("--mouse-x", `${event.clientX}px`);

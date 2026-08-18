@@ -311,3 +311,399 @@ footer{position:relative;z-index:3;padding:28px 0;border-top:1px solid var(--bor
   .footer-inner{align-items:flex-start;flex-direction:column}
   .theme-banner em{width:100%;text-align:center}
 }
+
+
+/* =========================================================
+FINAL TYPOGRAPHY SYSTEM
+Authoritative sizing layer for executive readability.
+========================================================= */
+
+:root {
+  --fs-label: 12px;
+  --fs-small: 13px;
+  --fs-body: 14px;
+  --fs-card-title: 17px;
+  --fs-subhead: 21px;
+  --fs-section: clamp(30px, 3.5vw, 40px);
+  --fs-hero: clamp(38px, 4.5vw, 54px);
+}
+
+/* HERO */
+
+.hero {
+  padding: 62px 0 54px;
+}
+
+.hero h1 {
+  max-width: 760px;
+  margin-bottom: 12px;
+  font-size: var(--fs-hero);
+  line-height: 1.04;
+}
+
+.case-tag {
+  min-height: 29px;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 14px;
+  padding: 6px 10px;
+  font-size: 11px;
+  line-height: 1;
+}
+
+.case-tag::after {
+  content: "";
+  width: 1px;
+  height: 13px;
+  margin-left: 3px;
+  background: var(--red2);
+  animation: case-cursor 0.75s steps(1) infinite;
+}
+
+.investigator {
+  margin-bottom: 16px;
+  gap: 10px;
+}
+
+.investigator span {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: .09em;
+}
+
+.investigator strong {
+  font-size: 19px;
+  line-height: 1.1;
+}
+
+.hero-subtitle {
+  margin-bottom: 13px;
+  font-size: 13px;
+  line-height: 1.35;
+  letter-spacing: .025em;
+}
+
+.hero-copy {
+  max-width: 690px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  margin-top: 25px;
+  gap: 11px;
+}
+
+.hero-actions .button {
+  min-height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 17px;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: .015em;
+}
+
+.headline-grid strong {
+  font-size: 27px;
+}
+
+.headline-grid span {
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+/* SECTION HIERARCHY */
+
+.exec-heading > span,
+.exec-conclusion > span {
+  font-size: var(--fs-label);
+  font-weight: 900;
+  letter-spacing: .10em;
+}
+
+.exec-heading h2 {
+  font-size: var(--fs-section);
+}
+
+.exec-heading p {
+  font-size: var(--fs-body);
+  line-height: 1.55;
+}
+
+.exec-block-title {
+  margin-bottom: 15px;
+  font-size: var(--fs-label);
+  font-weight: 900;
+  letter-spacing: .055em;
+}
+
+/* SKILLS */
+
+.exec-skills strong {
+  font-size: var(--fs-card-title);
+}
+
+.exec-skills p {
+  font-size: var(--fs-small);
+  line-height: 1.45;
+}
+
+/* PROBLEM */
+
+.exec-problem h3 {
+  font-size: var(--fs-subhead);
+}
+
+.exec-problem p {
+  font-size: var(--fs-body);
+}
+
+/* PROCESS */
+
+.exec-process strong {
+  font-size: 16px;
+}
+
+.exec-process span {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* FINDINGS */
+
+.exec-findings > article > span {
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .045em;
+}
+
+.exec-findings strong {
+  font-size: 26px;
+}
+
+.exec-findings p {
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+/* STATISTICAL VALIDATION */
+
+.exec-table strong {
+  font-size: 15px;
+}
+
+.exec-table span {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* EXPERIMENT */
+
+.exec-experiment strong {
+  font-size: 15px;
+}
+
+.exec-experiment span {
+  font-size: 11px;
+}
+
+.experiment-details strong {
+  font-size: 10px;
+  letter-spacing: .035em;
+}
+
+.experiment-details span {
+  font-size: 15px;
+}
+
+.exec-note {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* PRODUCTION READINESS */
+
+.exec-pipeline {
+  gap: 10px;
+}
+
+.exec-pipeline span {
+  padding: 9px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  background: rgba(255,255,255,.025);
+}
+
+.exec-pipeline b {
+  font-size: 15px;
+}
+
+.exec-mini-stats strong {
+  font-size: 20px;
+}
+
+.exec-mini-stats span {
+  margin-top: 2px;
+  font-size: 11px;
+  line-height: 1.35;
+}
+
+/* DEMO */
+
+.synthetic-warning {
+  font-size: 10px;
+  line-height: 1.4;
+}
+
+.demo-instructions > strong {
+  font-size: 14px;
+}
+
+.demo-instructions > div {
+  font-size: 11px;
+}
+
+.ranking-flow-mini {
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.ranking-demo-controls label {
+  font-size: 10px;
+}
+
+.policy-button,
+#demo-user {
+  font-size: 11px;
+}
+
+.interactive-profile-grid span {
+  font-size: 10px;
+}
+
+.interactive-profile-grid strong {
+  font-size: 16px;
+}
+
+.panel-heading span {
+  font-size: 9px;
+}
+
+.panel-heading strong {
+  font-size: 15px;
+}
+
+.candidate-info strong {
+  font-size: 13px;
+}
+
+.candidate-info span,
+.feature-inspector span,
+.feature-inspector strong {
+  font-size: 10px;
+}
+
+.demo-explanation strong {
+  font-size: 15px;
+}
+
+.demo-explanation p {
+  font-size: 11px;
+}
+
+/* CONCLUSION */
+
+.exec-conclusion h2 {
+  font-size: var(--fs-section);
+}
+
+.exec-conclusion p {
+  font-size: var(--fs-body);
+  line-height: 1.6;
+}
+
+/* NAV */
+
+.nav-links a,
+.repo-link,
+.brand {
+  font-size: 11px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+  .hero h1 {
+    font-size: clamp(36px, 7vw, 48px);
+  }
+
+  .hero-subtitle {
+    font-size: 12px;
+  }
+
+  .investigator span {
+    font-size: 10px;
+  }
+
+  .investigator strong {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 580px) {
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .exec-block-title {
+    font-size: 12px;
+  }
+
+  .exec-pipeline span {
+    font-size: 11px;
+  }
+}
+
+@keyframes case-cursor {
+  0%, 45% { opacity: 1; }
+  46%, 100% { opacity: 0; }
+}
+/* TOP THEME BANNER */
+.theme-banner {
+  min-height: 42px;
+  padding: 10px 16px;
+  gap: 11px;
+}
+
+.theme-banner span {
+  font-size: 11px;
+}
+
+.theme-banner strong {
+  font-size: 13px;
+}
+
+.theme-banner em {
+  font-size: 11px;
+}
+
+
+/* TOP NAV LINKS */
+.nav-links a {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: .02em;
+}
+
+/* GitHub button + CASE 01 for visual consistency */
+.repo-link,
+.brand {
+  font-size: 12px;
+}
