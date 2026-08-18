@@ -1,0 +1,8 @@
+check,passed,details
+required_columns,True,OK
+missing_ids,True,0 missing IDs
+valid_binary_outcome,True,0 invalid values
+quality_score_range,True,"0 values outside [0,1]"
+popularity_score_range,True,"0 values outside [0,1]"
+novelty_score_range,True,"0 values outside [0,1]"
+duplicate_user_experience,True,0 duplicates

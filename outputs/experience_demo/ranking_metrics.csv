@@ -1,0 +1,7 @@
+policy,k,precision_at_k,eligible_users
+historical_baseline,1,0.286,500
+historical_baseline,3,0.2593333333333333,500
+historical_baseline,5,0.2463709677419355,496
+personalized_model,1,0.444,500
+personalized_model,3,0.37266666666666665,500
+personalized_model,5,0.32056451612903225,496

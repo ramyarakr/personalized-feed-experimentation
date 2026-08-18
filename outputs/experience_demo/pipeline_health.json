@@ -1,0 +1,15 @@
+{
+  "generated_at_utc": "2026-08-17T13:44:55.993935+00:00",
+  "row_count": 20000,
+  "unique_users": 500,
+  "unique_experiences": 120,
+  "meaningful_engagement_rate": 0.23915,
+  "average_candidates_per_user": 40.0,
+  "missing_value_rate": 0.0,
+  "duplicate_user_experience_rows": 0,
+  "feature_means": {
+    "quality_score": 0.7098743027352763,
+    "popularity_score": 0.4687528714475372,
+    "novelty_score": 0.507139434249847
+  }
+}
