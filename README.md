@@ -2,10 +2,7 @@
 
 An end-to-end product data science and recommendation systems project exploring how meaningful engagement, personalization, experimentation, and production monitoring can improve ranking decisions.
 
-**Live case study:**  
-https://ramyarakr.github.io/personalized-feed-experimentation/
-
-**Project Website:**  
+**Live case study/ Project Website:**  
 https://ramyarakr.github.io/personalized-feed-experimentation/
 
 ---
