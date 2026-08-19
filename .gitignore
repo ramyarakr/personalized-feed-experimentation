@@ -17,3 +17,8 @@ data/processed/*
 Thumbs.db
 .vscode/
 .idea/
+
+# Private career vault
+docs/vault.html
+docs/vault.css
+docs/vault.js

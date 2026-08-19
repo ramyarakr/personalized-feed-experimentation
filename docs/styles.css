@@ -707,3 +707,90 @@ Authoritative sizing layer for executive readability.
 .brand {
   font-size: 12px;
 }
+
+/* =========================================================
+GLOBAL SUPPORTING TEXT SIZE +1
+Leaves main headings unchanged
+========================================================= */
+
+/* General body / explanatory text */
+.hero-copy,
+.exec-heading p,
+.exec-problem p,
+.exec-note,
+.exec-conclusion p,
+.demo-explanation p {
+  font-size: 15px;
+}
+
+/* Card and process descriptions */
+.exec-skills p,
+.exec-process span,
+.exec-findings p,
+.exec-table span {
+  font-size: 13px;
+}
+
+/* Small labels throughout dashboard */
+.exec-heading > span,
+.exec-conclusion > span,
+.exec-block-title,
+.hero-subtitle,
+.investigator span {
+  font-size: 13px;
+}
+
+/* Experiment labels */
+.exec-experiment span,
+.experiment-details strong,
+.exec-mini-stats span {
+  font-size: 12px;
+}
+
+/* Production pipeline */
+.exec-pipeline span {
+  font-size: 13px;
+}
+
+/* Demo text */
+.synthetic-warning,
+.demo-instructions > div,
+.ranking-flow-mini,
+.ranking-demo-controls label,
+.policy-button,
+#demo-user {
+  font-size: 12px;
+}
+
+/* Demo candidate / inspector details */
+.interactive-profile-grid span,
+.candidate-info span,
+.feature-inspector span,
+.feature-inspector strong {
+  font-size: 11px;
+}
+
+/* Headline KPI descriptions */
+.headline-grid span {
+  font-size: 12px;
+}
+
+/* Top theme bar */
+.theme-banner span,
+.theme-banner em {
+  font-size: 12px;
+}
+
+.theme-banner strong {
+  font-size: 14px;
+}
+
+/* Navigation */
+.nav-links a {
+  font-size: 14px;
+}
+
+.repo-link,
+.brand {
+  font-size: 13px;
+}
