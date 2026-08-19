@@ -5,7 +5,7 @@ An end-to-end product data science and recommendation systems project exploring 
 **Live case study:**  
 https://ramyarakr.github.io/personalized-feed-experimentation/
 
-**Project Website:**
+**Project Website:**  
 https://ramyarakr.github.io/personalized-feed-experimentation/
 
 ---
